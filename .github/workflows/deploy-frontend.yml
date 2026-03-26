@@ -31,7 +31,7 @@ jobs:
               --destination '$web' \
               --source frontend/ \
               --overwrite \
-              --auth-mode login
+              --auth-mode key
 
       # Step 4: Purge Azure Front Door cache
       # Without this, visitors might see the old cached version for hours
