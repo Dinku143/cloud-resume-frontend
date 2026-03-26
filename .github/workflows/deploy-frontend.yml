@@ -35,6 +35,7 @@ jobs:
 
       # Step 4: Purge Azure Front Door cache
       # Without this, visitors might see the old cached version for hours
+     # Step 4: Purge Azure Front Door cache
       - name: Purge Front Door cache
         uses: azure/CLI@v1
         with:
@@ -43,5 +44,5 @@ jobs:
               --resource-group rg-cloud-resume-challenge \
               --profile-name afd-cloud-resume \
               --endpoint-name dinkisa-resume \
-              --domains www.dinkisaworku.com dinkisaworku.com \
-              --content-paths '/*'
+              --content-paths '/*' \
+              --no-wait
