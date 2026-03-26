@@ -1,6 +1,5 @@
 name: Deploy Frontend
 
-# Trigger on every push to main branch
 on:
   push:
     branches: [main]
@@ -10,18 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out your code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Log in to Azure
       - name: Login to Azure
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      # Step 3: Upload HTML and CSS to Azure Blob Storage $web container
-      # This is what actually updates your live website
       - name: Upload to Azure Blob Storage
         uses: azure/CLI@v1
         with:
@@ -31,11 +26,8 @@ jobs:
               --destination '$web' \
               --source frontend/ \
               --overwrite \
-              --auth-mode key
+              --auth-mode login
 
-      # Step 4: Purge Azure Front Door cache
-      # Without this, visitors might see the old cached version for hours
-     # Step 4: Purge Azure Front Door cache
       - name: Purge Front Door cache
         uses: azure/CLI@v1
         with:
