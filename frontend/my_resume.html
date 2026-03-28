@@ -4,22 +4,17 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dinkisa Demeke Worku — Cloud & DevOps Engineer</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="my_resume.css"/>
 </head>
 <body>
 
-  <!-- Custom cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- ===================== NAVIGATION ===================== -->
+  <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">DDW</a>
     <ul class="nav-links">
@@ -31,7 +26,7 @@
     </ul>
   </nav>
 
-  <!-- ===================== HERO ===================== -->
+  <!-- HERO -->
   <section id="hero">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
@@ -39,7 +34,7 @@
     <div class="hero-bg-text">CLOUD</div>
 
     <div class="hero-content">
-      <p class="hero-label">Cloud || DevOps || SRE</p>
+      <p class="hero-label">Cloud · DevOps · SRE</p>
       <h1 class="hero-name">Dinkisa<br/><span>Demeke</span><br/>Worku</h1>
       <p class="hero-title">Azure Cloud & Infrastructure Engineer — AZ-104 · AZ-305 · AZ-900</p>
       <p class="hero-bio">
@@ -69,7 +64,7 @@
     </div>
   </section>
 
-  <!-- ===================== EXPERIENCE ===================== -->
+  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-inner">
       <div class="section-header reveal">
@@ -80,7 +75,6 @@
 
       <div class="exp-list">
 
-        <!-- LTIMindtree -->
         <div class="exp-item reveal">
           <div class="exp-meta">
             <p class="exp-period">03/2024 — Present</p>
@@ -90,18 +84,18 @@
           <div class="exp-body">
             <h3 class="exp-role">Cloud & Infrastructure Engineer <span>@ LTIMindtree</span></h3>
             <ul class="exp-bullets">
-              <li>Designed and optimised enterprise Azure networking: VNets, VWAN, NSGs, UDRs, VPN Gateways, and ExpressRoute for hybrid connectivity.</li>
-              <li>Deployed and managed containerised applications using AKS, Azure Container Apps, and Azure Container Registry for scalable cloud-native delivery.</li>
-              <li>Implemented GitOps workflows with Helm, Argo CD, and Flux, streamlining Kubernetes application releases and configuration management.</li>
-              <li>Built and optimised CI/CD pipelines using Azure DevOps and GitHub Actions, automating deployments and infrastructure provisioning.</li>
-              <li>Configured Azure load balancing: Load Balancer, Application Gateway, Traffic Manager, and Azure Front Door.</li>
-              <li>Authored IaC templates with Bicep and ARM; automated operational workflows with PowerShell and Python.</li>
-              <li>Provided deep-dive troubleshooting and architecture guidance following Azure best practices for enterprise customers.</li>
+              <li>Automated infrastructure creation and application deployments using Terraform, Bicep, and ARM Templates — reducing manual provisioning effort by ~60% and enforcing consistent, policy-compliant configurations across dev, staging, and production environments.</li>
+              <li>Designed and implemented highly available and secure cloud solutions on Azure — including multi-region AKS clusters, Azure Application Gateway with WAF, and Azure Firewall — ensuring fault-tolerant architectures aligned with 99.9%+ SLA targets.</li>
+              <li>Audited and maintained existing public cloud solutions for 3+ enterprise clients: reviewed resource configurations, identified cost optimisation opportunities, and documented remediation findings in structured audit reports.</li>
+              <li>Automated container-based application deployments on AKS using GitOps workflows (Argo CD, Flux, Helm), cutting release cycle time from days to under 2 hours and eliminating manual kubectl interventions.</li>
+              <li>Implemented end-to-end CI/CD pipelines with Azure DevOps for both infrastructure (Terraform plan/apply gates) and application deployments, enabling zero-downtime deployments across all managed environments.</li>
+              <li>Engineered secure Azure networking fabric (VNet peering, VWAN, ExpressRoute, VPN Gateway, Private Endpoints, NSGs, UDRs) to support hybrid cloud migration for enterprise clients.</li>
+              <li>Configured centralised monitoring and logging using Azure Monitor, Log Analytics (KQL), and Grafana dashboards — reducing mean time to detect (MTTD) incidents by ~45%.</li>
+              <li>Managed identity and access using Microsoft Entra ID, Managed Identities, Azure Key Vault, and RBAC, enforcing least-privilege principles across 500+ cloud resources.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Self-Employed -->
         <div class="exp-item reveal">
           <div class="exp-meta">
             <p class="exp-period">01/2021 — 08/2022</p>
@@ -111,9 +105,9 @@
           <div class="exp-body">
             <h3 class="exp-role">IT Technical Engineer <span>@ Independent</span></h3>
             <ul class="exp-bullets">
-              <li>Delivered IT infrastructure support for SMBs — Windows/Linux servers, VPNs, firewalls, monitoring, and backup solutions.</li>
-              <li>Built secure network architectures with VPN connectivity, firewall configuration, and identity access controls.</li>
-              <li>Guided hybrid infrastructure environments in transitioning toward cloud adoption.</li>
+              <li>Designed and implemented secure network architectures (site-to-site VPN, firewall policies, AD identity controls) for 10+ SMEs, improving security posture and laying groundwork for cloud migration projects.</li>
+              <li>Automated server backup, recovery, and monitoring workflows on Linux/Windows Server environments, reducing recovery time objective (RTO) by 50%.</li>
+              <li>Delivered cloud adoption readiness assessments and infrastructure modernisation roadmaps, guiding organisations through the strategic planning phase of Azure migrations.</li>
             </ul>
           </div>
         </div>
@@ -122,7 +116,7 @@
     </div>
   </section>
 
-  <!-- ===================== SKILLS ===================== -->
+  <!-- SKILLS -->
   <section id="skills">
     <div class="section-inner">
       <div class="section-header reveal">
@@ -217,7 +211,7 @@
             <span class="tag">Grafana</span>
             <span class="tag">Prometheus</span>
             <span class="tag">KQL</span>
-            <span class="tag">Wireshark</span>
+            <span class="tag">Log Analytics</span>
           </div>
         </div>
 
@@ -236,15 +230,15 @@
         </div>
 
         <div class="skill-card reveal">
-          <span class="skill-icon">🗄️</span>
-          <p class="skill-cat">Data & Streaming</p>
-          <h3 class="skill-name">Databases & Stream Processing</h3>
+          <span class="skill-icon">🔐</span>
+          <p class="skill-cat">Identity & Security</p>
+          <h3 class="skill-name">IAM & Security</h3>
           <div class="skill-tags">
-            <span class="tag">MongoDB</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">Apache Kafka</span>
-            <span class="tag">Apache Flink</span>
+            <span class="tag">Entra ID</span>
+            <span class="tag">Managed Identities</span>
+            <span class="tag">Azure Key Vault</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">TLS / PKI</span>
           </div>
         </div>
 
@@ -252,7 +246,7 @@
     </div>
   </section>
 
-  <!-- ===================== PROJECTS ===================== -->
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="section-inner">
       <div class="section-header reveal">
@@ -268,15 +262,16 @@
           <p class="project-type">Master's Thesis · Research</p>
           <h3 class="project-title">Real-Time Fraud Detection Pipeline</h3>
           <p class="project-desc">
-            Developed a real-time fraud detection pipeline for payment card transactions using Apache Kafka
-            for stream ingestion, Apache Flink for stateful processing, and MongoDB as the NoSQL store.
-            Integrated Prometheus and Grafana for full observability. Python-based simulation evaluated
-            NoSQL vs SQL efficiency in high-throughput financial environments.
+            Designed and implemented a production-grade distributed streaming platform for real-time anomaly detection
+            in payment card transactions. Built a scalable ingestion layer with Apache Kafka and a stateful processing
+            pipeline with Apache Flink, achieving sub-second anomaly flagging. Instrumented with Prometheus, Grafana,
+            and Elasticsearch. Benchmarked MongoDB vs PostgreSQL under identical streaming workloads.
           </p>
           <div class="project-tech">
             <span class="tag">Apache Kafka</span>
             <span class="tag">Apache Flink</span>
             <span class="tag">MongoDB</span>
+            <span class="tag">PostgreSQL</span>
             <span class="tag">Prometheus</span>
             <span class="tag">Grafana</span>
             <span class="tag">Python</span>
@@ -284,43 +279,32 @@
           <a href="https://github.com/Dinku143/Dinkisa_Worku_Thesis_2025_files/tree/main" target="_blank" class="project-link">View on GitHub</a>
         </div>
 
-      
-          <div class="project-tech">
-            <span class="tag">Azure</span>
-            <span class="tag">AKS</span>
-            <span class="tag">Bicep</span>
-            <span class="tag">Argo CD</span>
-            <span class="tag">Azure DevOps</span>
-            <span class="tag">Helm</span>
-          </div>
-          <a href="https://www.linkedin.com/in/dinkisa-worku-a43b68253/" target="_blank" class="project-link">View LinkedIn</a>
-        </div>
-
         <div class="project-card reveal">
-          <span class="project-num">03</span>
-          <p class="project-type">Automation · Reliability</p>
-          <h3 class="project-title">CI/CD Pipeline & Full-Stack Observability</h3>
+          <span class="project-num">02</span>
+          <p class="project-type">Cloud · IaC · CI/CD</p>
+          <h3 class="project-title">Cloud Resume Challenge — Azure</h3>
           <p class="project-desc">
-            Built and optimised multi-stage CI/CD pipelines for cloud-native microservices using Azure DevOps
-            and GitHub Actions. Integrated Azure Monitor with KQL alerting, Grafana dashboards, and Prometheus
-            metrics for end-to-end observability — significantly reducing MTTR for production incidents.
+            Designed and implemented a serverless, highly available cloud solution on Azure — Static Web Apps
+            (CDN-backed via Azure Front Door), Azure Functions (Python API), and Cosmos DB — following PaaS-first
+            architecture principles. Automated all infrastructure using Terraform. Established a fully automated
+            CI/CD pipeline with GitHub Actions covering both infrastructure and application delivery.
           </p>
           <div class="project-tech">
+            <span class="tag">Azure Front Door</span>
+            <span class="tag">Azure Functions</span>
+            <span class="tag">Cosmos DB</span>
+            <span class="tag">Terraform</span>
             <span class="tag">GitHub Actions</span>
-            <span class="tag">Azure Monitor</span>
-            <span class="tag">KQL</span>
-            <span class="tag">Grafana</span>
-            <span class="tag">Docker</span>
-            <span class="tag">PowerShell</span>
+            <span class="tag">Python</span>
           </div>
-          <a href="https://www.linkedin.com/in/dinkisa-worku-a43b68253/" target="_blank" class="project-link">View LinkedIn</a>
+          <a href="https://www.dinkisaworku.com" target="_blank" class="project-link">View Live Site</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ===================== CERTIFICATIONS ===================== -->
+  <!-- CERTIFICATIONS -->
   <section id="certs">
     <div class="section-inner">
       <div class="section-header reveal">
@@ -371,7 +355,7 @@
     </div>
   </section>
 
-  <!-- ===================== EDUCATION ===================== -->
+  <!-- EDUCATION -->
   <section id="education">
     <div class="section-inner">
       <div class="section-header reveal">
@@ -386,6 +370,7 @@
           <h3 class="edu-degree">Master's Degree</h3>
           <p class="edu-field">Computer Science — Computer Systems & Networks</p>
           <p class="edu-school">Warsaw University of Technology, Poland</p>
+          <p class="edu-school" style="margin-top:0.5rem; font-size:0.78rem; opacity:0.7;">Thesis: NoSQL Databases in Stream Data Processing for Real-Time Anomaly Detection in Card Payment Transactions</p>
         </div>
         <div class="edu-card reveal">
           <p class="edu-period">09/2016 — 01/2021</p>
@@ -397,7 +382,7 @@
     </div>
   </section>
 
-  <!-- ===================== CONTACT ===================== -->
+  <!-- CONTACT -->
   <section id="contact">
     <div class="section-inner">
       <div class="section-header reveal">
@@ -462,17 +447,14 @@
     </div>
   </section>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
   <footer>
     <span class="footer-logo">Dinkisa Demeke Worku</span>
     <span class="footer-copy">Cloud & Infrastructure Engineer — Krakow, Poland</span>
-
     <span class="footer-copy">👁️ Visitors: <span id="visitor-count">...</span></span>
   </footer>
 
-  
-
-  <!-- ===================== JAVASCRIPT ===================== -->
+  <!-- JAVASCRIPT -->
   <script>
     // Custom cursor
     const cursor = document.getElementById('cursor');
@@ -516,26 +498,19 @@
         }
       });
     }, { threshold: 0.12 });
-
     reveals.forEach(el => observer.observe(el));
 
     // Visitor counter
-async function updateVisitorCount() {
-  try {
-    const response = await fetch('https://YOUR_FUNCTION_URL/api/count_visitor');
-    const data = await response.json();
-    document.getElementById('visitor-count').innerText = data.count;
-  } catch (error) {
-    console.error('Could not fetch visitor count:', error);
-    document.getElementById('visitor-count').innerText = '—';
-  }
-}
-
-updateVisitorCount();
-
-const response = await fetch('https://func-cloud-resume-dinkisa.azurewebsites.net/api/visitor_counter');
-
-
+    async function updateVisitorCount() {
+      try {
+        const response = await fetch('https://func-cloud-resume-dinkisa.azurewebsites.net/api/visitor_counter');
+        const data = await response.json();
+        document.getElementById('visitor-count').innerText = data.count;
+      } catch (error) {
+        document.getElementById('visitor-count').innerText = '—';
+      }
+    }
+    updateVisitorCount();
   </script>
 
 </body>
