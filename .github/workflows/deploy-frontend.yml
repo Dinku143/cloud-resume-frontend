@@ -26,7 +26,8 @@ jobs:
               --destination '$web' \
               --source frontend/ \
               --overwrite \
-              --auth-mode login
+              --auth-mode key \
+              --account-key ${{ secrets.STORAGE_ACCOUNT_KEY }}
 
       - name: Purge Front Door cache
         uses: azure/CLI@v1
