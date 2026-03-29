@@ -18,23 +18,7 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-<<<<<<< HEAD
-
-      - name: Upload to Azure Blob Storage
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az storage blob upload-batch \
-              --account-name dinkisacvstorage \
-              --destination '$web' \
-              --source frontend/ \
-          
-              --overwrite
-              --auth-mode key \
-              --account-key ${{ secrets.STORAGE_ACCOUNT_KEY }}
-=======
->>>>>>> 2211cacbad5c5434ae5bc1ab8e48e059b2240936
-
+ 
       - name: Purge Front Door cache
         uses: azure/CLI@v1
         with:
